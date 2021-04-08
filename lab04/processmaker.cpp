@@ -53,6 +53,9 @@ else
     printf("Parent: awaiting for child.\n");        
     waitpid(childId, NULL, 0);   
     printf("%6d proc: Process is finished.\n", curId); 
-  }      
+  }  
+	char shared_mem_delete_command[124]; 
+	sprintf(shared_mem_delete_command, "ipcrm -m %i", mem_id); 
+	system(shared_mem_delete_command);
       return 0; 
 }
