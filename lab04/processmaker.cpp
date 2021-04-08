@@ -26,7 +26,9 @@ void childMainCode(int *sharedMem) {
     print (sharedMem); 
     exit(0);
 
-}  int main() {
+}  
+
+int main() {
             int memId; 
             int *sharedMem = (int *)allocateSharedMemory(1024, memId);    
   printf("memId = %d\n", memId);  
