@@ -16,7 +16,7 @@ void sem(int semId, int n, int state)
     semop(semId, &op, 1);
 }
 
-void rand_fill(int* arr, int n, int mind, int maxd)
+void rand(int* arr, int n, int mind, int maxd)
 {
     srand(time(0));
     int randnumber = maxd - mind + 1;
