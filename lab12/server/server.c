@@ -10,7 +10,6 @@
 #include <errno.h>
 #include <unistd.h>
 
-// OFFICIALNO SKOMMUNIJJENO SO STACKOVERFLOW
 long getFileSize(FILE* file)
 {
     fseek(file, 0L, SEEK_END);
